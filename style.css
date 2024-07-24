@@ -159,24 +159,40 @@ button:active {
 
 .highlight__wrapper {
     display: flex;
-    flex-wrap: wrap;
-
 }
 
 
 .highlight {
+    padding: 0 24px; 
+    width: calc(100% / 3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}   
 
+.highlight__para {
+    text-align: center;
 }
 
+
 .highlight__img {
+    border: 2px solid  rgb(16, 112, 247);
+    width: 100px;
+    height: 100px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    font-size: 32px; 
+    margin-bottom: 24px; 
+    color: rgb(16, 112, 247)
 
 }
 
 
 .highlight__subtitle {
-
-}
-
-.highlight__para {
-
+    font-size: 20px;
+    margin-bottom: 16px; 
+    text-align: center;
 }
