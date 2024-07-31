@@ -42,6 +42,11 @@ a:hover {
     text-decoration: underline; 
 }
 
+
+
+/* NAV */
+
+
 .nav_container {
     display: flex;
     width: 100%;
@@ -88,50 +93,66 @@ li {
 }
 
 .nav__link--primary:hover {
-    border: 2px solid  rgb(16, 112, 247);
+    /* border: 2px solid  rgb(16, 112, 247);
     border-radius: 4px; 
     background-color: rgb(16, 112, 247);
-    color: white;
+    color: white; */
     text-decoration: none; 
 }
 
+
+/* LANDING */
+
+
 #landing {
     background-color: rgb(115, 66, 214, 0.1)
-} */ */
+} 
 
 header {
     height: calc(100vh-80px);
 }
 
+
 /* HEADER AND MIDDLE PART OF SITE */
 
-    .header__container {
+.header__container {
     width: 100%; 
     max-width: 720px; 
     margin: 0 auto; 
+    height: 100%;
     padding-top: 72px; 
-    max-height: 320px;   
+    /* max-height: 320px;    */
     display: flex;
     flex-direction: column; 
     justify-content: space-around;
-    background-color: rgb(115, 66, 214, 0.1);
+    /* background-color: rgb(115, 66, 214, 0.1); */
 } 
 
 .header__description {
     padding: 16px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* text-align: center;  */
+
+}
+
+
+.header__img--wrapper {
+    padding: 20px; 
 }
 
 h1 {
     font-size: 56px;
     color: rgb(16, 112, 247);
     text-align: center; 
+    /* margin: 24px; */
 }
 
 h2 {
     text-align: center;
     font-size: 32px;
-    margin-bottom: 4px; 
+    margin-bottom: 32px; 
 }
 
 .btn {
@@ -144,16 +165,20 @@ h2 {
     font-weight: bold; 
 }
 
+.purple {
+    color: rgb(16, 112, 247); 
+}
+
+.logo {
+    width: 160px;
+}
+
 button {  
     cursor: pointer;
 }
 
 button:active {
     transform: translateY(1px);
-}
-
-.header__img--wrapper {
-    padding: 20px; 
 }
 
 .btn__menu {
@@ -323,9 +348,9 @@ button:active {
   
   .row {
     width: 100%;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
-  } */
+  } 
   
   .row__column {
     display: flex;
@@ -347,7 +372,8 @@ button:active {
 
 .highlight__wrapper {
     display: flex;
-} */
+ /* flex-wrap: wrap; this is an issue and shows up vertically so I removed it and my code is like the image  */
+} 
 
 
 .highlight {
@@ -356,7 +382,7 @@ button:active {
     display: flex;
     align-items: center;
     flex-direction: column;
-}    */
+}    
 
 .highlight__para {
     text-align: center;
@@ -365,7 +391,7 @@ button:active {
 
 
 .highlight__img {
-    border: 2px solid  rgb(16, 112, 247);
+    border: 2px solid rgb(16, 112, 247);
     width: 100px;
     height: 100px; 
     display: flex;
@@ -376,7 +402,6 @@ button:active {
     margin-top: 48px;
     margin-bottom: 24px; 
     /* color: rgb(16, 112, 247) */
-
 } 
 
 
@@ -434,12 +459,12 @@ button:active {
 .books {
     display: flex;
     flex-wrap: wrap;
-    float: left; 
+    /* float: left; 
     width: 100%;
     text-align: center;
     padding: 0px;
     margin-top: 48px;
-    flex-direction: space-between;
+    flex-direction: space-between; */
 
 }
 
@@ -447,7 +472,7 @@ button:active {
 .book__img {
     max-height: 380px;
     transition: all 300ms ease; 
-    cursor: no-drop;
+    cursor: not-allowed;
 }
 
 
@@ -474,7 +499,7 @@ button:active {
 
 .book__title:hover {
     text-decoration: underline;
-    cursor: no-drop;
+    cursor: not-allowed;
 }
 
 .book__ratings {
@@ -489,7 +514,8 @@ button:active {
 }
 
 .book {
-    width: 100%;
+    width: 25%;
+    padding: 24px;
 }
 
 /* EXPLORE  */
@@ -498,9 +524,9 @@ button:active {
 
 #explore {
     background-color: rgba (115, 66, 214, 0.1);
-    margin-bottom: 100px;
+    /* margin-bottom: 100px;
     display: flex;
-    justify-content: center;
+    justify-content: center; */
 }
 
 
@@ -514,25 +540,33 @@ footer {
 
 .footer__logo {
     display: flex;
+    filter: grayscale(1) invert(1);
+}
+
+.footer__logo--img {
+    width: 160px;
+    filter: grayscale(1) invert(1);
     align-items: center;
     justify-content: center;
     margin-bottom: 24px;
-    width: 160px;
-    filter: grayscale(1) invert(1);
 }
 
 
 .footer__link,
 .footer__copyright {
     color: #fff;
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
 } 
 
 
 .footer__list { 
     margin: 20px 0 24px 0; 
+    /* color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
 }
 
 
@@ -547,7 +581,25 @@ footer {
     .header__description {
         padding: 0 24px;
     }
-} 
+
+
+h1 {
+    font-size: 40px;
+    }
+    
+h2 {
+    font-size: 26px;
+    }
+    
+button {
+    font-size: 18px;
+      }
+    
+.book {
+    width: 50%;
+    }
+}
+    
 
 /* SMALL PHONES, LARGE SMARTPHONES */
 
@@ -555,27 +607,10 @@ footer {
     .btn__menu {
         display: block;
     }
-}
-
-h1 {
-    font-size: 40px; 
-} 
-
-
-h2 {
-    font-size: 26px;
-}
-
-
-.button { 
-    font-size: 18px; 
-}
-
 
 .book {
     width: 25%;
-} */
-
+} 
 
 .nav__links {
     display: none;
@@ -590,4 +625,6 @@ h2 {
 
 .hightlight:not(:last-child) {
     margin-bottom: 24px;
+}
+
 }
