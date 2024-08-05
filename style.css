@@ -216,7 +216,7 @@ button:active {
   .menu--open .menu__backdrop {
     visibility: visible;
     opacity: 1;
-    transform: translate(0);
+    transform: translateY(0);
   }
   
   .menu__links {
