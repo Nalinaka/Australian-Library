@@ -90,11 +90,11 @@ li {
 }
 
 .nav__link--primary:hover {
-  /* border: 2px solid  rgb(16, 112, 247);
+    text-decoration: none;
+ /* border: 2px solid  rgb(16, 112, 247);
     border-radius: 4px; 
     background-color: rgb(16, 112, 247);
     color: white; */
-  text-decoration: none;
 }
 
 /* LANDING */
@@ -138,7 +138,7 @@ h1 {
   font-size: 56px;
   color: rgb(16, 112, 247);
   text-align: center;
-  /* margin: 24px; */
+  margin: 24px;
 }
 
 h2 {
@@ -176,7 +176,7 @@ button:active {
 .btn__menu {
   background-color: transparent;
   font-size: 40px;
-  text-align: center;
+  /* text-align: center; */
   border: none;
   color: #7342d6;
   display: none;
@@ -207,24 +207,25 @@ button:active {
 .menu--open .menu__backdrop {
   visibility: visible;
   opacity: 1;
-  transform: translateY(0);
+  transform: translate(0);
+  /* removed Y from translate as per the code provided */
 }
 
-.menu__link {
+.menu__links {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: white;
-  font-size: 40px;
+  /* color: white;
+  font-size: 40px; */
 }
 
 .menu__list {
   padding: 32px 0;
 }
 
-.menu__link:hover {
+/* .menu__link:hover {
   color: #7342d6;
-}
+} */
 
 .btn__menu--close {
   position: absolute;
@@ -277,9 +278,11 @@ button:active {
 }
 
 .menu__link {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; */
+  color: white; 
+  font-size: 40px; 
 }
 
 .btn__menu--close {
@@ -318,10 +321,10 @@ header {
 
 .header__img--wrapper {
   padding: 20px;
-  z-index: 2;
-  width: 100%;
+  z-index: 50;
+  /* width: 100%;
   margin-top: 96px;
-  margin-bottom: 80px;
+  margin-bottom: 80px; */
 }
 
 .h2 {
@@ -361,7 +364,7 @@ header {
 
 .highlight__wrapper {
   display: flex;
-  /* flex-wrap: wrap; this is an issue and shows up vertically so I removed it and my code is like the image  */
+  flex-wrap: wrap;  
 }
 
 .highlight {
@@ -435,7 +438,7 @@ header {
 #features {
   padding-top: 8vw;
   background-color: rgb(115, 66, 214, 0.1);
-  height: 1000px;
+  /* height: 1000px; */
 }
 
 .books {
@@ -517,9 +520,9 @@ footer {
 .footer__logo--img {
   width: 160px;
   filter: grayscale(1) invert(1);
-  align-items: center;
+  /* align-items: center;
   justify-content: center;
-  margin-bottom: 24px;
+  margin-bottom: 24px; */
 }
 
 .footer__link,
@@ -573,9 +576,9 @@ footer {
     display: block;
   }
 
-  .book {
+  /* .book {
     width: 25%;
-  }
+  } */
 
   .nav__links {
     display: none;
@@ -583,7 +586,7 @@ footer {
 
   .highlight {
     width: 100%;
-    margin-bottom: 24px;
+    /* margin-bottom: 24px; */
   }
 
   .hightlight:not(:last-child) {
